@@ -42,9 +42,10 @@ feed:
 
 # Build settings
 show_excerpts: true
-permalink: none
+permalink: :title/ # trailing slashes
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
 
