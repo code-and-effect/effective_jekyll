@@ -11,26 +11,28 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ "/" | relative_url }}">Home <span class="sr-only">(current)</span></a>
-        </li>
+        {% for item in site.menus.header %}
+          {% if item.children %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown-{{ item.slug }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ item.title }}
+              </a>
 
-        <li class="nav-item">
-          <a class="nav-link" href="{% link about.markdown %}">About</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
+              <div class="dropdown-menu" aria-labelledby="dropdown-{{ item.slug }}">
+                {% for item in item.children %}
+                  <a class="dropdown-item" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+                {% endfor %}
+              </div>
+            </li>
+          {% else %}
+            <li class="nav-item nav-item-{{ loop.index }}">
+              <a class="nav-link" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
-
   </div>
 </nav>
+
+

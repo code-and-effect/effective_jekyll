@@ -1,0 +1,21 @@
+---
+header:
+  - url: /
+    title: Home
+    identifier: home
+
+  - url: /about/
+    title: About
+    identifier: about
+
+  - url: '#'
+    title: Dropdown
+    identifier: dropdown
+
+dropdown:
+  - url: /about/
+    title: About 2
+
+  - url: /about/
+    title: About 3
+---

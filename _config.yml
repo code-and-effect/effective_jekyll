@@ -45,6 +45,7 @@ show_excerpts: true
 permalink: :title/ # trailing slashes
 plugins:
   - jekyll-feed
+  - jekyll-menus
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
