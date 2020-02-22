@@ -46,6 +46,7 @@ permalink: none
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 
 # Exclude from processing.
