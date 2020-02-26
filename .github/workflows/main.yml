@@ -2,12 +2,12 @@
 name: Publish to GitHub Pages
 
 # Specifies to run this workflow whenever a push is made (commits are
-# added) to the branch named `master`.
+# added) to the branch named `jekyll`.
 on:
   push:
     branches:
       # Change this to the branch where you keep your Jekyll code.
-      - master
+      - jekyll
 
 # Define a job named `build-and-publish` in your workflow.
 jobs:
@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest # This job uses a GitHub-hosted runner.
 
     steps:
-      # Checkout the source from the `master` branch.
+      # Checkout the source from the `jekyll` branch.
       - uses: actions/checkout@v2
 
       # Invoke this action against the newly checked out source code.
-      - uses: meitar/jekyll-builder-for-github-pages-action@master
+      - uses: meitar/jekyll-builder-for-github-pages-action@v1
         with:
           # Provide this action with your repository's `GH_PAGES_TOKEN`
           # "Secret" variable. This should be the value of a personal
