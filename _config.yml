@@ -19,22 +19,23 @@
 # in the templates via {{ site.myvariable }}.
 title: REPLACE_ME_TITLE # The site title used as part of the title tag like 'page.title | title'.
 tagline: REPLACE_ME_TAGLINE # A short description used as part of the title tag of the home page like 'title | tagline'.
-email: REPLACE_ME
+email: REPLACE_ME_EMAIL
 description: REPLACE_ME_DESCRIPTION # Used for the description meta tag and is the fallback for pages that don't provide their own description
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "REPLACE_ME" # the base hostname & protocol for your site, e.g. http://example.com
+url: "REPLACE_ME_URL" # the base hostname & protocol for your site, e.g. http://example.com
 author: REPLACE_ME_AUTHOR
-logo: REPLACE_ME # URL to a site-wide logo (e.g., /assets/your-company-logo.png)
+logo: REPLACE_ME_LOGO # URL to a site-wide logo (e.g., /assets/your-company-logo.png)
+destination: ./build
 
 twitter:
   username: REPLACE_ME_TWITTER
   card: summary
 
 github:
-  username:  REPLACE_ME_GITHUB
+  username: REPLACE_ME_GITHUB
 
 linkedin:
-  username:  REPLACE_ME_LINKEDIN
+  username: REPLACE_ME_LINKEDIN
 
 social:
   name: REPLACE_ME_SOCIAL
@@ -60,8 +61,6 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-
-seo_paginator_message: 'asdf'
 
 feed:
   excerpt_only: true # only show excerpt in /feed.xml

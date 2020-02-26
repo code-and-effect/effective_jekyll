@@ -1,0 +1,2 @@
+example.com # www.example.com will redirect to root
+www.example.com # example.com will redirect to www cname
