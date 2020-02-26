@@ -1,7 +1,12 @@
-- name: Jekyll Action
-  uses: helaili/jekyll-action@1.0
+name: jekyll-build
 
 on:
   push:
     branches:
       - master  # Trigger the workflow on push or pull request, but only for the master branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+      - name: Jekyll Action
+        uses: helaili/jekyll-action@1.0
