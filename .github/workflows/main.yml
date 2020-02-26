@@ -1,5 +1,5 @@
-name: Jekyll Action
-  - uses: helaili/jekyll-action@1.0
+- name: Jekyll Action
+  uses: helaili/jekyll-action@1.0
 
 on:
   push:
