@@ -1,18 +1,14 @@
-<footer class="container h-card" role="footer">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="container h-card">
+  <data class="u-url" value="{{ "/" | relative_url }}"></data>
 
   <div class="row">
     <div class="col">
       <ul class="contact-list">
         <li class="p-name">
-          {%- if site.author -%}
-            {{ site.author | escape }}
-          {%- else -%}
-            {{ site.title | escape }}
-          {%- endif -%}
+          {{ site.title | escape }}
         </li>
         {%- if site.email -%}
-          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a class="u-email" value="mailto:{{ site.email }}">{{ site.email }}</a></li>
         {%- endif -%}
       </ul>
     </div>

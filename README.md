@@ -9,6 +9,7 @@
 - [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 - [jekyll-deploy-gh-pages](https://github.com/marketplace/actions/jekyll-deploy-gh-pages)
+- [jekyll-compress-hmtl](https://github.com/penibelst/jekyll-compress-html)
 
 ## Using Bootstrap
 
