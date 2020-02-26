@@ -17,22 +17,51 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: REPLACE_ME
+title: REPLACE_ME_TITLE # The site title used as part of the title tag like 'page.title | title'.
+tagline: REPLACE_ME_TAGLINE # A short description used as part of the title tag of the home page like 'title | tagline'.
 email: REPLACE_ME
-description: >- # this means to ignore newlines until "baseurl:"
-  REPLACE_ME Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: REPLACE_ME_DESCRIPTION # Used for the description meta tag and is the fallback for pages that don't provide their own description
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "REPLACE_ME" # the base hostname & protocol for your site, e.g. http://example.com
-author: REPLACE_ME
-twitter_username: REPLACE_ME
-github_username:  REPLACE_ME
+author: REPLACE_ME_AUTHOR
+logo: REPLACE_ME # URL to a site-wide logo (e.g., /assets/your-company-logo.png)
 
+twitter:
+  username: REPLACE_ME_TWITTER
+  card: summary
+
+github:
+  username:  REPLACE_ME_GITHUB
+
+linkedin:
+  username:  REPLACE_ME_LINKEDIN
+
+social:
+  name: REPLACE_ME_SOCIAL
+  links:
+    - https://twitter.com/REPLACE_ME
+    - https://www.facebook.com/REPLACE_ME
+    - https://www.linkedin.com/in/REPLACE_ME
+    - https://github.com/REPLACE_ME
+
+
+# Plugin settings
 sass:
   sass_dir: _sass # _sass is default
   style: compressed # nested, expanded, compact, or compressed
 
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 2
+  permalink: '/page/:num/'
+  title: ':title - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+seo_paginator_message: 'asdf'
 
 feed:
   excerpt_only: true # only show excerpt in /feed.xml
@@ -40,16 +69,26 @@ feed:
     - news
     - updates
 
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
 # Build settings
 show_excerpts: true
-permalink: :title/ # trailing slashes
+permalink: :title/ # always trailing slashes
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
   - jekyll-menus
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

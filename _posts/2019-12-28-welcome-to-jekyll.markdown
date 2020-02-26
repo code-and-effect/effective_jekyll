@@ -1,6 +1,5 @@
 ---
 layout: post
-
 title: Welcome to Jekyll
 slug: welcome-to-jekyll
 date: 2019-12-28 20:07:44 -0700

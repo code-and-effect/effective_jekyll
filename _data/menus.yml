@@ -8,6 +8,10 @@ header:
     title: About
     identifier: about
 
+  - url: /blog/
+    title: Blog
+    identifier: blog
+
   - url: '#'
     title: Dropdown
     identifier: dropdown
