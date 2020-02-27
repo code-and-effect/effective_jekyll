@@ -25,7 +25,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "REPLACE_ME_URL" # the base hostname & protocol for your site, e.g. http://example.com
 author: REPLACE_ME_AUTHOR
 logo: REPLACE_ME_LOGO # URL to a site-wide logo (e.g., /assets/your-company-logo.png)
-destination: ./build
 
 twitter:
   username: REPLACE_ME_TWITTER
