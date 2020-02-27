@@ -1,3 +1,5 @@
+# Note: this action doesn't work
+
 # Name of your GitHub Actions workflow.
 name: Publish to GitHub Pages
 
