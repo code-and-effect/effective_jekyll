@@ -1,4 +1,4 @@
-ruby "2.6.3" # as per forestroy.io preview environment
+ruby "~> 2.6" # as per forestroy.io preview environment
 
 source "https://rubygems.org"
 # Hello! This is where you manage which Jekyll version is used to run.
