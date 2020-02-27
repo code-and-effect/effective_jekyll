@@ -1,4 +1,4 @@
-ruby "~> 2.6" # forestroy.io preview environment needs 2.6.3, netlify needs 2.6.2, github actions needs 2.6.5
+ruby "~> 2.6" # forestry.io needs 2.6.3, netlify needs 2.6.2, github actions needs 2.6.5
 
 source "https://rubygems.org"
 # Hello! This is where you manage which Jekyll version is used to run.

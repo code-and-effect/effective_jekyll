@@ -5,10 +5,10 @@
 This is a starter Jekyll site that uses:
 
 - Bootstrap 4.4.1
-- forestry.io for the CMS
-- Netlify for the deployment
+- forestry.io as the CMS
+- Netlify for the deployment/hosting
 
-Doesn't use a theme gem. Sites built with effective_jekyll are assumed to be custom and/or not wanting to pull changes from a gem.
+Doesn't use a theme gem.
 
 Demo: https://effective-jekyll-demo.netlify.com/
 
@@ -22,20 +22,17 @@ Demo: https://effective-jekyll-demo.netlify.com/
 - [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 
-## Deployment
-
-Configured to deploy on GitHub pages via [jekyll-deploy-gh-pages](https://github.com/marketplace/actions/jekyll-deploy-gh-pages)
-
-## Bootstrap 4.4.1
+## Notes re: Bootstrap 4.4.1
 
 - CDNs for the JS (Jquery, Bootstrap, and Popper) are included at the bottom of `_includes/default.html`
 - Customize Bootstrap by editing `_sass/bootstrap-4.4.1/_variables.scss`
 - Comment out unused Bootstrap components @included in `_sass/bootstrap-4.4.1/bootstrap.scss`
 - Override compiled Bootstrap components in `_sass/componenents/*`
 
-## Sublime Text
+## Notes re: Editor
 
-- add `_site` and `.jekyll-cache` to your `folder_exclude_patterns` via Preferences --> Settings
+- Sublime Text: add `_site` and `.jekyll-cache` to your `folder_exclude_patterns` via Preferences --> Settings
+- VS.Code: I dunno something similar though :)
 
 ## New Site Setup
 
@@ -44,9 +41,8 @@ Configured to deploy on GitHub pages via [jekyll-deploy-gh-pages](https://github
 3. `bundle exec jekyll serve`
 4. Search all files for REPLACE_ME and update as appropriate
 5. Update the footer h-card contact details for the business or person
-6. (optional) Copy CNAME.example to /CNAME
-7. (optional) Adjust the config.baseurl to "" if deploying to the root of a custom domain
-8. Deploy on Netlify using default Jekyll build options
+6. (optional) Adjust the config.baseurl to "" if deploying to the root of a custom domain
+7. Deploy on Netlify using default Jekyll build options
 
 ## License
 
