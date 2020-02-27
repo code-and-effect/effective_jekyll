@@ -1,6 +1,9 @@
 # Name of your GitHub Actions workflow.
 name: Publish to GitHub Pages
 
+env:
+  DEBUG: true
+
 # Specifies to run this workflow whenever a push is made (commits are
 # added) to the branch named `jekyll`.
 on:
@@ -17,9 +20,9 @@ jobs:
     steps:
       # Checkout the source from the `jekyll` branch.
       - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '2.6.3' # as per Gemfile
+      # - uses: ruby/setup-ruby@v1
+      #   with:
+      #     ruby-version: '2.6.3' # as per Gemfile
 
       # Invoke this action against the newly checked out source code.
       - uses: meitar/jekyll-builder-for-github-pages-action@master
@@ -28,7 +31,6 @@ jobs:
           # "Secret" variable. This should be the value of a personal
           # access token granted, at a minimum, the `public_repo` and
           # the `repo_deployment` scopes needed to deploy to GH Pages.
-          debug: 'true'
           secret_gh_pages_api_token: ${{ secrets.GH_PAGES_TOKEN }}
           pre_build_commands: |
             echo "using: $(ruby --version)"
