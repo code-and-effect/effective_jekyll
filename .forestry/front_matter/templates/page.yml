@@ -17,3 +17,10 @@ fields:
 - type: number
   name: priority
   label: priority
+- name: redirectable_from
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: redirectable_from
