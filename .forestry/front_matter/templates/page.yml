@@ -18,6 +18,7 @@ fields:
   label: description
   config:
     required: true
+    max: '160'
 - type: text
   name: permalink
   label: permalink
