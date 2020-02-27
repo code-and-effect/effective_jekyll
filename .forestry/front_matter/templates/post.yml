@@ -5,21 +5,37 @@ fields:
 - type: text
   name: layout
   label: layout
+  config:
+    required: true
+  default: post
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: text
   name: slug
   label: slug
+  config:
+    required: true
 - type: datetime
   name: date
   label: date
+  config:
+    date_format: YYYY-DD-MM
+    required: true
+  default: now
 - type: text
   name: excerpt
   label: excerpt
+  config:
+    required: true
 - type: text
   name: description
   label: description
+  config:
+    required: true
+    max: '160'
 - type: text
   name: category
   label: category
