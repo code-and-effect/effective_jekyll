@@ -109,3 +109,4 @@ plugins:
 #   - vendor/ruby/
 exclude:
   - deploy.workflow
+  - README.md
