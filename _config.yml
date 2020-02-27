@@ -21,7 +21,7 @@ title: REPLACE_ME_TITLE # The site title used as part of the title tag like 'pag
 tagline: REPLACE_ME_TAGLINE # A short description used as part of the title tag of the home page like 'title | tagline'.
 email: REPLACE_ME_EMAIL
 description: REPLACE_ME_DESCRIPTION # Used for the description meta tag and is the fallback for pages that don't provide their own description
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/effective_jekyll" # the subpath of your site, e.g. /blog
 url: "REPLACE_ME_URL" # the base hostname & protocol for your site, e.g. http://example.com
 author: REPLACE_ME_AUTHOR
 logo: REPLACE_ME_LOGO # URL to a site-wide logo (e.g., /assets/your-company-logo.png)
@@ -109,3 +109,4 @@ plugins:
 #   - vendor/ruby/
 exclude:
   - deploy.workflow
+  - README.md
