@@ -1,0 +1,26 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: permalink
+  label: permalink
+- type: number
+  name: priority
+  label: priority
+- name: redirect_from
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: redirect_from

@@ -36,7 +36,8 @@ Configured to deploy on GitHub pages via [jekyll-deploy-gh-pages](https://github
 3. `bundle exec jekyll serve`
 4. Search all files for REPLACE_ME and update as appropriate
 5. Update the footer h-card contact details for the business or person
-6. Copy CNAME.example to /CNAME
+6. (optional) Copy CNAME.example to /CNAME
+7. (optional) Adjust the config.baseurl to "" if deploying to the root of a custom domain
 
 ## License
 
