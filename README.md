@@ -1,8 +1,16 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/880b30d7-85fe-413a-92dd-05a3cc64cea3/deploy-status)](https://app.netlify.com/sites/effective-jekyll-demo/deploys)
+
 # Effective Jekyll
 
-- effective_jekyll is a starter Jekyll site using Bootstrap4 and forestry.io
-- Doesn't use a theme gem. Sites built with effective_jekyll are assumed to be custom and/or not wanting to pull changes from a gem.
--
+This is a starter Jekyll site that uses:
+
+- Bootstrap 4.4.1
+- forestry.io for the CMS
+- Netlify for the deployment
+
+Doesn't use a theme gem. Sites built with effective_jekyll are assumed to be custom and/or not wanting to pull changes from a gem.
+
+Demo: https://effective-jekyll-demo.netlify.com/
 
 ## Installed Plugins
 
@@ -20,10 +28,10 @@ Configured to deploy on GitHub pages via [jekyll-deploy-gh-pages](https://github
 
 ## Bootstrap 4.4.1
 
-- CDNs for the JS (Jquery, Bootstrap, and Popper) are included in `_includes/default.html`
-- Customize Bootstrap4 by editing `_sass/bootstrap-4.4.1/_variables.scss`
-- Comment out unused Bootstrap4 components @included in `_sass/bootstrap-4.4.1/bootstrap.scss`
-- Override compiled Bootstrap4 components in `_sass/componenents/*`
+- CDNs for the JS (Jquery, Bootstrap, and Popper) are included at the bottom of `_includes/default.html`
+- Customize Bootstrap by editing `_sass/bootstrap-4.4.1/_variables.scss`
+- Comment out unused Bootstrap components @included in `_sass/bootstrap-4.4.1/bootstrap.scss`
+- Override compiled Bootstrap components in `_sass/componenents/*`
 
 ## Sublime Text
 
@@ -38,10 +46,11 @@ Configured to deploy on GitHub pages via [jekyll-deploy-gh-pages](https://github
 5. Update the footer h-card contact details for the business or person
 6. (optional) Copy CNAME.example to /CNAME
 7. (optional) Adjust the config.baseurl to "" if deploying to the root of a custom domain
+8. Deploy on Netlify using default Jekyll build options
 
 ## License
 
-MIT License.  Copyright [Code and Effect Inc.](http://www.codeandeffect.com/)
+MIT License. Copyright [Code and Effect Inc.](http://www.codeandeffect.com/)
 
 ## Contributing
 

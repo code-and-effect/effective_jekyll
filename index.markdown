@@ -1,7 +1,7 @@
 ---
 layout: home
-title: REPLACE_ME_INDEX_TITLE
-description: REPLACE_ME_INDEX_DESCRIPTION
+title: effective_jekyll demo
+description: A demo site for the effective_jekyll repo
 ---
 
-<p>/_layouts/home.html</p>
+<p>Change content at /_layouts/home.html</p>
