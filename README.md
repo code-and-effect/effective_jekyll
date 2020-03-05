@@ -16,6 +16,7 @@ Demo: https://effective-jekyll-demo.netlify.com/
 
 - [jekyll-compress-html](https://github.com/penibelst/jekyll-compress-html)
 - [jekyll-feed](https://github.com/jekyll/jekyll-feed)
+- [jekyll-gzip](https://github.com/philnash/jekyll-gzip)
 - [jekyll-menus](https://github.com/forestryio/jekyll-menus)
 - [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
 - [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from)
@@ -42,7 +43,7 @@ Demo: https://effective-jekyll-demo.netlify.com/
 4. Search all files for REPLACE_ME and update as appropriate
 5. Update the footer h-card contact details for the business or person
 6. (optional) Adjust the config.baseurl to "" if deploying to the root of a custom domain
-7. Deploy on Netlify using default Jekyll build options
+7. Deploy on Netlify using default Jekyll build options, but add RUBY_VERSION 2.6.3 Environement Variable
 
 ## License
 

@@ -82,6 +82,7 @@ show_excerpts: true
 permalink: :title/ # always trailing slashes
 plugins:
   - jekyll-feed
+  - jekyll-gzip
   - jekyll-paginate-v2
   - jekyll-menus
   - jekyll-redirect-from
